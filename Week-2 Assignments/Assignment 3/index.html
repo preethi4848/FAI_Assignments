@@ -1,1 +1,67 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+    <title>
+        Assignment 3
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<h1><center>EMPLOYEE DATABASE APP</center></h1>
+	<hr>
+			<div class="employee-form">
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Employee ID*</label><label class="validation-error hide" id="empIDValidationError">This field is required.</label>
+                        <input type="number" name="empid" id="empid">
+                    </div>
+                    <div>
+                        <label>Full Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label>Email Id</label>
+                        <input type="text" name="email" id="email">
+                    </div>
+                    <div>
+                        <label>Salary</label>
+                        <input type="number" name="salary" id="salary">
+                    </div>
+                    <div>
+                        <label>City</label>
+                        <input type="text" name="city" id="city">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+		</div>
+		<br/>
+		<div class = "employees-table">
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Employee ID</th>
+                            <th>Full Name</th>
+                            <th>Email Id</th>
+                            <th>Salary</th>
+                            <th>City</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+        </div>
+        <input type="number" name="Empid" id="empid">
+        <input type="text" name="fullName" id="fullName">
+        <input type="text" name="email" id="email">
+        <input type="number" name="salary" id="salary">
+        <input type="text" name="city" id="city">
+    <script src="script.js"></script>
+</body>
+</html>
