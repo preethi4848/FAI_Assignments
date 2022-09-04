@@ -1,0 +1,58 @@
+body{
+    background-color: cornflowerblue;
+}
+h1{
+    font-size: 35px;
+    font-family: monospace;
+    padding: 10px;
+    margin-left: 25px;
+    margin-bottom: 50px;
+}
+label{
+    font-family: monospace;
+    font-size: large;
+}
+.wrapper{
+    width: 500px;
+    background-color: white;
+    padding: 70px 40px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+.input{
+    border-radius: 5px;
+    border: 2px solid blue;
+    outline: none;
+    padding: 5px;
+    margin-left: 20px;
+}
+select{
+    border-radius: 5px;
+    border: 2px solid blue;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+.submit{
+    border-radius: 5px;
+    border: 2px solid blue;
+    outline: none;
+    background-color: transparent;
+    padding: 6px;
+    margin-bottom: 20px;
+    font-family: monospace;
+}
+.submit:hover{
+    background-color: blue;
+    color: white;
+}
+.output{
+    font-size: large;
+    font-family: monospace;
+    color: red;
+    
+}

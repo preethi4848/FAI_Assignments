@@ -1,1 +1,23 @@
-
+<!DOCTYPE html>
+<head>
+    <title>Assignment 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+    <h1>Temperature Converter</h1>
+    <form id="tempCal" onsubmit="calculateTemp(); return false"> 
+        <label>Enter Value:</label>
+        <input type="number" name="temp" id="temp" class="input">
+        <select name="temp_diff" id="temp_diff" class="option">
+            <option value="cel">°C</option>
+            <option value="fah">°F</option>
+        </select>
+        <input type="submit" name="temp" class="submit" value="Convert"><br/>
+        <label>Converted Temperature:</label>
+        <span id="resultContainer" class="output"></span>
+    </form>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
